@@ -174,20 +174,24 @@
         <svg id="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
       </button>
     </div>
-
-    <!-- Full-screen mobile menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 hidden flex-col bg-surface lg:hidden" aria-hidden="true">
-      <nav class="flex flex-1 flex-col items-center justify-center gap-8 px-8" aria-label="Navegación móvil">
-        <a href="#inicio" class="mobile-link font-display text-3xl text-ink-strong">Inicio</a>
-        <a href="#nosotros" class="mobile-link font-display text-3xl text-ink-strong">Nosotros</a>
-        <a href="#tratamientos" class="mobile-link font-display text-3xl text-ink-strong">Tratamientos</a>
-        <a href="#proceso" class="mobile-link font-display text-3xl text-ink-strong">Proceso</a>
-        <a href="#ubicacion" class="mobile-link font-display text-3xl text-ink-strong">Ubicación</a>
-        <a href="#contacto" class="mobile-link font-display text-3xl text-ink-strong">Contacto</a>
-        <a href="tel:+523316484084" class="btn btn-primary mt-4 text-lg">Agenda tu cita</a>
-      </nav>
-    </div>
   </header>
+
+  <!-- Full-screen mobile menu (kept outside <header> on purpose: the header
+       gets a translateY transform when it hides on scroll, and a transform
+       on an ancestor turns it into the containing block for any
+       position:fixed descendant — which broke this panel's full-viewport
+       sizing whenever it was opened after the header had auto-hidden) -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 hidden flex-col bg-surface lg:hidden" aria-hidden="true">
+    <nav class="flex flex-1 flex-col items-center justify-center gap-8 px-8" aria-label="Navegación móvil">
+      <a href="#inicio" class="mobile-link font-display text-3xl text-ink-strong">Inicio</a>
+      <a href="#nosotros" class="mobile-link font-display text-3xl text-ink-strong">Nosotros</a>
+      <a href="#tratamientos" class="mobile-link font-display text-3xl text-ink-strong">Tratamientos</a>
+      <a href="#proceso" class="mobile-link font-display text-3xl text-ink-strong">Proceso</a>
+      <a href="#ubicacion" class="mobile-link font-display text-3xl text-ink-strong">Ubicación</a>
+      <a href="#contacto" class="mobile-link font-display text-3xl text-ink-strong">Contacto</a>
+      <a href="tel:+523316484084" class="btn btn-primary mt-4 text-lg">Agenda tu cita</a>
+    </nav>
+  </div>
 
   <main id="contenido">
     <!-- ============ HERO ============ -->
