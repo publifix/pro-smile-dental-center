@@ -1,91 +1,599 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pro Smile Dental Center | Monterrey</title>
-  <style>
-    :root {
-      --bg: #f7f9fb;
-      --text: #1c2733;
-      --muted: #5b6b7a;
-      --accent: #0e7c86;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-    .hero {
-      position: relative;
-      min-height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(180deg, rgba(14,124,134,0.55), rgba(14,124,134,0.75)), url('hero-pro-smile.jpg') center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 2rem;
-    }
-    .hero img.logo {
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-    }
-    .hero h1 {
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      margin: 0 0 0.5rem;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 32rem;
-      margin: 0 auto;
-      opacity: 0.95;
-    }
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem;
-    }
-    .status {
-      background: #fff;
-      border: 1px solid #e1e7ec;
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-      color: var(--muted);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <section class="hero">
-    <div>
-      <img class="logo" src="LOGO.jpg" alt="Pro Smile Dental Center">
-      <h1>Pro Smile Dental Center</h1>
-      <p>Cuidado dental de calidad en Monterrey. Sitio en construcción.</p>
-    </div>
-  </section>
+  <script>document.documentElement.classList.add('js')</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <main>
-    <div class="status">
-      Este sitio está en desarrollo y se publica automáticamente en GitHub Pages
-      con cada actualización. Vuelve pronto para ver el sitio completo.
+  <title>Pro Smile Dental Center | Clínica Dental en Providencia, Guadalajara</title>
+  <meta name="description" content="Cuida tu sonrisa en Pro Smile Dental Center: endodoncia, periodoncia, ortodoncia, implantología y rehabilitación en Providencia, Guadalajara. Agenda tu cita hoy." />
+  <meta name="keywords" content="odontología, clínica dental Guadalajara, endodoncia, ortodoncia, implantes dentales, Providencia, periodoncia, rehabilitación dental" />
+  <meta name="author" content="Pro Smile Dental Center" />
+  <link rel="canonical" href="https://publifix.github.io/pro-smile-dental-center/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pro Smile Dental Center | Clínica Dental en Providencia, Guadalajara" />
+  <meta property="og:description" content="Tratamientos dentales completos, un trato cercano y la tecnología que tu sonrisa merece, en el corazón de Providencia." />
+  <meta property="og:image" content="https://publifix.github.io/pro-smile-dental-center/images/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://publifix.github.io/pro-smile-dental-center/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:site_name" content="Pro Smile Dental Center" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pro Smile Dental Center | Clínica Dental en Providencia, Guadalajara" />
+  <meta name="twitter:description" content="Endodoncia, periodoncia, ortodoncia, implantología y rehabilitación en Providencia, Guadalajara. Agenda tu cita hoy." />
+  <meta name="twitter:image" content="https://publifix.github.io/pro-smile-dental-center/images/og-cover.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#4FA69C" />
+
+  <!--
+    JSON-LD: Dentist / LocalBusiness + Servicios.
+    Nota: "geo" usa coordenadas aproximadas de la colonia Providencia (no se pudo
+    geocodificar la dirección exacta en este entorno); confirmar y ajustar
+    latitude/longitude con el pin exacto de Google Maps antes de depender de
+    búsquedas "cerca de mí" muy precisas.
+  -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Dentist",
+        "@id": "https://publifix.github.io/pro-smile-dental-center/#negocio",
+        "name": "Pro Smile Dental Center",
+        "image": "https://publifix.github.io/pro-smile-dental-center/images/og-cover.jpg",
+        "url": "https://publifix.github.io/pro-smile-dental-center/",
+        "telephone": "+52 33 1648 4084",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Edificio Centro Médico, Av. Terranova 676 Int. 104, Col. Providencia",
+          "addressLocality": "Guadalajara",
+          "addressRegion": "Jalisco",
+          "postalCode": "44630",
+          "addressCountry": "MX"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 20.6923,
+          "longitude": -103.3865
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "10:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "10:00",
+            "closes": "14:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/prosmiledentalcenter/",
+          "https://www.facebook.com/people/Prosmile-Dental-Center/100095510323012/"
+        ]
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Endodoncia",
+        "provider": { "@id": "https://publifix.github.io/pro-smile-dental-center/#negocio" },
+        "areaServed": "Guadalajara, Jalisco",
+        "description": "Tratamos la raíz de tu diente para eliminar el dolor y salvar tu pieza dental sin complicaciones."
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Periodoncia",
+        "provider": { "@id": "https://publifix.github.io/pro-smile-dental-center/#negocio" },
+        "areaServed": "Guadalajara, Jalisco",
+        "description": "Cuidamos la salud de tus encías para proteger la base de tu sonrisa a largo plazo."
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Ortodoncia",
+        "provider": { "@id": "https://publifix.github.io/pro-smile-dental-center/#negocio" },
+        "areaServed": "Guadalajara, Jalisco",
+        "description": "Alineamos tus dientes con el tratamiento adecuado para ti, a tu ritmo y con resultados duraderos."
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Implantología",
+        "provider": { "@id": "https://publifix.github.io/pro-smile-dental-center/#negocio" },
+        "areaServed": "Guadalajara, Jalisco",
+        "description": "Reemplazamos piezas dentales perdidas con implantes seguros y de aspecto natural."
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Rehabilitación",
+        "provider": { "@id": "https://publifix.github.io/pro-smile-dental-center/#negocio" },
+        "areaServed": "Guadalajara, Jalisco",
+        "description": "Recuperamos la función y la estética de tu boca con soluciones integrales a la medida."
+      }
+    ]
+  }
+  </script>
+
+  <script type="module" src="/src/main.ts"></script>
+</head>
+<body class="bg-surface text-ink font-body">
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand focus:px-5 focus:py-3 focus:text-white">
+    Saltar al contenido principal
+  </a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,transform] duration-300">
+    <div class="relative z-50 mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8 lg:px-10">
+      <a href="#inicio" class="flex items-center gap-3" aria-label="Pro Smile Dental Center, inicio">
+        <img
+          src="/images/logo-96.webp"
+          srcset="/images/logo-96.webp 96w, /images/logo-160.webp 160w, /images/logo-320.webp 320w"
+          sizes="44px"
+          width="96" height="96"
+          alt="Logotipo de Pro Smile Dental Center"
+          class="h-11 w-11 rounded-full object-cover"
+        />
+        <span class="font-display text-lg font-semibold tracking-tight"><span class="brand-name">Pro Smile</span> <span class="text-brand">Dental Center</span></span>
+      </a>
+
+      <nav class="hidden items-center gap-8 lg:flex" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#tratamientos" class="nav-link">Tratamientos</a>
+        <a href="#proceso" class="nav-link">Proceso</a>
+        <a href="#ubicacion" class="nav-link">Ubicación</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="hidden lg:block">
+        <a href="tel:+523316484084" class="btn btn-primary">Agenda tu cita</a>
+      </div>
+
+      <button
+        id="menu-toggle"
+        type="button"
+        class="icon-btn border-none bg-white/70 backdrop-blur lg:hidden"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Abrir menú de navegación"
+      >
+        <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+      </button>
     </div>
+
+    <!-- Full-screen mobile menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 hidden flex-col bg-surface lg:hidden" aria-hidden="true">
+      <nav class="flex flex-1 flex-col items-center justify-center gap-8 px-8" aria-label="Navegación móvil">
+        <a href="#inicio" class="mobile-link font-display text-3xl text-ink-strong">Inicio</a>
+        <a href="#nosotros" class="mobile-link font-display text-3xl text-ink-strong">Nosotros</a>
+        <a href="#tratamientos" class="mobile-link font-display text-3xl text-ink-strong">Tratamientos</a>
+        <a href="#proceso" class="mobile-link font-display text-3xl text-ink-strong">Proceso</a>
+        <a href="#ubicacion" class="mobile-link font-display text-3xl text-ink-strong">Ubicación</a>
+        <a href="#contacto" class="mobile-link font-display text-3xl text-ink-strong">Contacto</a>
+        <a href="tel:+523316484084" class="btn btn-primary mt-4 text-lg">Agenda tu cita</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ HERO ============ -->
+    <section id="inicio" class="relative flex min-h-[100svh] items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          class="parallax-layer h-full w-full scale-[1.15] object-cover"
+          src="/images/hero-consultorio-pro-smile-1600.jpg"
+          srcset="
+            /images/hero-consultorio-pro-smile-640.avif 640w,
+            /images/hero-consultorio-pro-smile-1024.avif 1024w,
+            /images/hero-consultorio-pro-smile-1600.avif 1600w,
+            /images/hero-consultorio-pro-smile-2400.avif 2400w"
+          sizes="100vw"
+          width="2400" height="1800"
+          alt="Consultorio dental Pro Smile Dental Center en Providencia, Guadalajara"
+          fetchpriority="high"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink-strong/80 via-ink-strong/35 to-ink-strong/20"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-4xl px-6 py-32 text-center text-white sm:px-8">
+        <p class="kicker !text-white/90 reveal">Odontología integral en Guadalajara</p>
+        <h1 class="reveal mt-5 font-display text-[2.1rem] leading-[1.1] font-medium sm:text-5xl md:text-6xl">
+          Cuida tu sonrisa con el equipo de Pro Smile Dental Center
+        </h1>
+        <p class="reveal mx-auto mt-6 max-w-2xl text-base text-white/90 sm:text-lg">
+          Tratamientos dentales completos, un trato cercano y la tecnología que tu sonrisa merece, en el corazón de Providencia.
+        </p>
+        <div class="reveal mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="tel:+523316484084" class="btn btn-accent w-full sm:w-auto">Agenda tu cita</a>
+          <a href="#tratamientos" class="btn btn-ghost w-full !border-white/70 !text-white hover:!border-white sm:w-auto">Conoce nuestros tratamientos</a>
+        </div>
+      </div>
+
+      <a href="#nosotros" aria-label="Desplázate a la siguiente sección" class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 animate-bounce text-white/80 sm:block motion-reduce:animate-none">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ SOBRE NOSOTROS ============ -->
+    <section id="nosotros" class="mx-auto max-w-7xl px-6 py-24 sm:px-8 sm:py-28 lg:px-10">
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+        <div class="reveal order-2 lg:order-1">
+          <p class="kicker">Sobre nosotros</p>
+          <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Un consultorio pensado para que sonreír sea fácil</h2>
+          <p class="mt-6 text-base leading-relaxed text-ink sm:text-lg">
+            En Pro Smile Dental Center creemos que cuidar tu boca no debería ser complicado ni intimidante. Por eso combinamos experiencia clínica en todas las áreas de la odontología con un trato cálido y cercano, para acompañarte en cada etapa del cuidado de tu sonrisa, desde la prevención hasta los tratamientos más especializados.
+          </p>
+        </div>
+        <div class="reveal order-1 aspect-[4/5] overflow-hidden rounded-[1.75rem] lg:order-2">
+          <img
+            class="h-full w-full object-cover"
+            src="/images/atencion-dental-pro-smile-1080.jpg"
+            srcset="
+              /images/atencion-dental-pro-smile-480.webp 480w,
+              /images/atencion-dental-pro-smile-768.webp 768w,
+              /images/atencion-dental-pro-smile-1080.webp 1080w,
+              /images/atencion-dental-pro-smile-1350.webp 1350w"
+            sizes="(min-width: 1024px) 40vw, 90vw"
+            width="1350" height="900"
+            alt="Atención dental profesional y cercana en consultorio"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRATAMIENTOS ============ -->
+    <section id="tratamientos" class="bg-surface-soft px-6 py-24 sm:px-8 sm:py-28 lg:px-10">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="kicker">Tratamientos</p>
+          <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Todo lo que tu sonrisa necesita, en un solo lugar</h2>
+        </div>
+
+        <div id="treatments-grid" class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
+            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.4 0-3.6 1.4-5 1.4S4 3.6 3 4.6c-1.3 1.3-1 4 .2 7 .9 2.3 1.6 5.4 2.8 7.4.7 1.1 1.4 1.6 2 1.6.9 0 1.1-1.6 1.4-3.2.3-1.4.6-2.6 1.6-2.6s1.3 1.2 1.6 2.6c.3 1.6.5 3.2 1.4 3.2.6 0 1.3-.5 2-1.6 1.2-2 1.9-5.1 2.8-7.4 1.2-3 1.5-5.7.2-7-1-1-2.6.2-4 .2S14.4 3 12 3Z"/></svg>
+            </span>
+            <h3 class="mt-6 font-display text-xl font-medium">Endodoncia</h3>
+            <p class="mt-3 leading-relaxed text-ink">Tratamos la raíz de tu diente para eliminar el dolor y salvar tu pieza dental sin complicaciones.</p>
+          </article>
+
+          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
+            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13c0-4 3-8 8-8s8 4 8 8-3 6-8 6-8-2-8-6Z"/><path d="M8 13c0 2 2 3 4 3s4-1 4-3"/></svg>
+            </span>
+            <h3 class="mt-6 font-display text-xl font-medium">Periodoncia</h3>
+            <p class="mt-3 leading-relaxed text-ink">Cuidamos la salud de tus encías para proteger la base de tu sonrisa a largo plazo.</p>
+          </article>
+
+          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
+            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="9" width="16" height="7" rx="3"/><path d="M8 9V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            </span>
+            <h3 class="mt-6 font-display text-xl font-medium">Ortodoncia</h3>
+            <p class="mt-3 leading-relaxed text-ink">Alineamos tus dientes con el tratamiento adecuado para ti, a tu ritmo y con resultados duraderos.</p>
+          </article>
+
+          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
+            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v9"/><path d="M8 8l4-5 4 5"/><path d="M7 21l1.5-9h7L17 21"/></svg>
+            </span>
+            <h3 class="mt-6 font-display text-xl font-medium">Implantología</h3>
+            <p class="mt-3 leading-relaxed text-ink">Reemplazamos piezas dentales perdidas con implantes seguros y de aspecto natural.</p>
+          </article>
+
+          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
+            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 1 3 6.2"/><path d="M4 18v-4h4"/></svg>
+            </span>
+            <h3 class="mt-6 font-display text-xl font-medium">Rehabilitación</h3>
+            <p class="mt-3 leading-relaxed text-ink">Recuperamos la función y la estética de tu boca con soluciones integrales a la medida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO (scroll-pin) ============ -->
+    <section id="proceso" class="relative overflow-hidden px-6 py-24 sm:px-8 sm:py-28 lg:px-10">
+      <svg aria-hidden="true" class="pointer-events-none absolute -right-24 -top-24 h-[26rem] w-[26rem] opacity-[0.08] sm:h-[34rem] sm:w-[34rem]" viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="95" stroke="var(--color-neutral)" stroke-width="6" />
+        <circle cx="100" cy="100" r="72" stroke="var(--color-brand)" stroke-width="6" />
+      </svg>
+
+      <div class="reveal relative mx-auto max-w-2xl text-center">
+        <p class="kicker">Cómo trabajamos</p>
+        <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Así cuidamos tu sonrisa, paso a paso</h2>
+      </div>
+
+      <div id="process-pin-wrapper" class="relative mx-auto mt-16 max-w-6xl">
+        <div id="process-pin-track" class="lg:h-[320vh]">
+          <div id="process-pin-stage" class="grid gap-6 lg:grid lg:h-screen lg:grid-cols-[auto_1fr] lg:items-center lg:gap-16 lg:py-20">
+            <ol class="hidden shrink-0 flex-col gap-6 lg:flex" aria-hidden="true">
+              <li data-step-dot="0" class="process-dot h-3 w-3 rounded-full bg-neutral/40 transition-colors duration-300"></li>
+              <li data-step-dot="1" class="process-dot h-3 w-3 rounded-full bg-neutral/40 transition-colors duration-300"></li>
+              <li data-step-dot="2" class="process-dot h-3 w-3 rounded-full bg-neutral/40 transition-colors duration-300"></li>
+              <li data-step-dot="3" class="process-dot h-3 w-3 rounded-full bg-neutral/40 transition-colors duration-300"></li>
+            </ol>
+
+            <div class="grid grid-cols-1 gap-6 lg:hidden">
+              <article class="process-step reveal rounded-2xl bg-surface-soft p-8">
+                <p class="font-display text-4xl font-medium text-brand/40">01</p>
+                <h3 class="mt-3 font-display text-xl font-medium">Agenda tu cita</h3>
+                <p class="mt-3 leading-relaxed text-ink">Contáctanos por teléfono o mensaje y elegimos el horario que mejor te acomode.</p>
+              </article>
+              <article class="process-step reveal rounded-2xl bg-surface-soft p-8">
+                <p class="font-display text-4xl font-medium text-brand/40">02</p>
+                <h3 class="mt-3 font-display text-xl font-medium">Diagnóstico personalizado</h3>
+                <p class="mt-3 leading-relaxed text-ink">Evaluamos tu caso y diseñamos un plan de tratamiento a tu medida.</p>
+              </article>
+              <article class="process-step reveal rounded-2xl bg-surface-soft p-8">
+                <p class="font-display text-4xl font-medium text-brand/40">03</p>
+                <h3 class="mt-3 font-display text-xl font-medium">Tratamiento con seguimiento cercano</h3>
+                <p class="mt-3 leading-relaxed text-ink">Te acompañamos en cada sesión, explicándote cada paso.</p>
+              </article>
+              <article class="process-step reveal rounded-2xl bg-surface-soft p-8">
+                <p class="font-display text-4xl font-medium text-brand/40">04</p>
+                <h3 class="mt-3 font-display text-xl font-medium">Sonrisa cuidada a largo plazo</h3>
+                <p class="mt-3 leading-relaxed text-ink">Te damos las recomendaciones para mantener tu sonrisa sana entre visitas.</p>
+              </article>
+            </div>
+
+            <div id="process-panels" class="relative hidden lg:block lg:h-80">
+              <article data-step-panel="0" class="process-panel absolute inset-0">
+                <p class="font-display text-6xl font-medium text-brand/30">01</p>
+                <h3 class="mt-4 font-display text-3xl font-medium">Agenda tu cita</h3>
+                <p class="mt-4 max-w-xl text-lg leading-relaxed text-ink">Contáctanos por teléfono o mensaje y elegimos el horario que mejor te acomode.</p>
+              </article>
+              <article data-step-panel="1" class="process-panel absolute inset-0">
+                <p class="font-display text-6xl font-medium text-brand/30">02</p>
+                <h3 class="mt-4 font-display text-3xl font-medium">Diagnóstico personalizado</h3>
+                <p class="mt-4 max-w-xl text-lg leading-relaxed text-ink">Evaluamos tu caso y diseñamos un plan de tratamiento a tu medida.</p>
+              </article>
+              <article data-step-panel="2" class="process-panel absolute inset-0">
+                <p class="font-display text-6xl font-medium text-brand/30">03</p>
+                <h3 class="mt-4 font-display text-3xl font-medium">Tratamiento con seguimiento cercano</h3>
+                <p class="mt-4 max-w-xl text-lg leading-relaxed text-ink">Te acompañamos en cada sesión, explicándote cada paso.</p>
+              </article>
+              <article data-step-panel="3" class="process-panel absolute inset-0">
+                <p class="font-display text-6xl font-medium text-brand/30">04</p>
+                <h3 class="mt-4 font-display text-3xl font-medium">Sonrisa cuidada a largo plazo</h3>
+                <p class="mt-4 max-w-xl text-lg leading-relaxed text-ink">Te damos las recomendaciones para mantener tu sonrisa sana entre visitas.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ PRUEBA SOCIAL ============ -->
+    <section class="bg-surface-soft px-6 py-24 sm:px-8 sm:py-28 lg:px-10">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="kicker">Lo que dicen de nosotros</p>
+        </div>
+
+        <!-- Nota para el equipo: testimonios de ejemplo (mock), sustituir por reseñas reales de pacientes -->
+        <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <figure class="testimonial-card reveal rounded-2xl bg-white p-8">
+            <div class="flex gap-1 text-accent" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+            </div>
+            <blockquote class="mt-4 leading-relaxed text-ink">
+              <p>&ldquo;Desde que voy a Pro Smile Dental Center dejé de tenerle miedo al dentista, el trato es increíble.&rdquo;</p>
+            </blockquote>
+            <figcaption class="mt-4 font-display text-lg font-medium text-ink-strong">— Ana M.</figcaption>
+          </figure>
+
+          <figure class="testimonial-card reveal rounded-2xl bg-white p-8">
+            <div class="flex gap-1 text-accent" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+            </div>
+            <blockquote class="mt-4 leading-relaxed text-ink">
+              <p>&ldquo;Excelente atención y resultados, se nota que son expertos en cada tratamiento.&rdquo;</p>
+            </blockquote>
+            <figcaption class="mt-4 font-display text-lg font-medium text-ink-strong">— Carlos R.</figcaption>
+          </figure>
+
+          <figure class="testimonial-card reveal rounded-2xl bg-white p-8">
+            <div class="flex gap-1 text-accent" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
+            </div>
+            <blockquote class="mt-4 leading-relaxed text-ink">
+              <p>&ldquo;Me explicaron todo el proceso de mi ortodoncia con mucha paciencia, 100% recomendados.&rdquo;</p>
+            </blockquote>
+            <figcaption class="mt-4 font-display text-lg font-medium text-ink-strong">— Fernanda L.</figcaption>
+          </figure>
+        </div>
+
+        <!-- Nota para el equipo: cifras de ejemplo (mock), sustituir por datos reales del cliente -->
+        <dl class="mt-16 grid grid-cols-1 gap-10 border-t border-neutral/20 pt-12 text-center sm:grid-cols-3">
+          <div class="reveal">
+            <dt class="sr-only">Pacientes atendidos</dt>
+            <dd class="font-display text-4xl font-medium text-brand sm:text-5xl">
+              <span data-counter data-target="1200" data-suffix="+">0</span>
+            </dd>
+            <p class="mt-2 text-sm text-neutral">pacientes atendidos</p>
+          </div>
+          <div class="reveal">
+            <dt class="sr-only">Años cuidando sonrisas</dt>
+            <dd class="font-display text-4xl font-medium text-brand sm:text-5xl">
+              <span data-counter data-target="8" data-prefix="+">0</span>
+            </dd>
+            <p class="mt-2 text-sm text-neutral">años cuidando sonrisas</p>
+          </div>
+          <div class="reveal">
+            <dt class="sr-only">Satisfacción</dt>
+            <dd class="font-display text-4xl font-medium text-brand sm:text-5xl">
+              <span data-counter data-target="98" data-suffix="%">0</span>
+            </dd>
+            <p class="mt-2 text-sm text-neutral">de satisfacción</p>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ CTA INTERMEDIO (parallax) ============ -->
+    <section class="relative flex min-h-[60vh] items-center overflow-hidden bg-gradient-to-br from-brand-darker via-brand-dark to-brand-dark py-24">
+      <svg aria-hidden="true" class="parallax-layer pointer-events-none absolute -left-32 -top-40 h-[46rem] w-[46rem] opacity-20 sm:-left-16" viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="95" stroke="#ffffff" stroke-width="4" />
+        <circle cx="100" cy="100" r="72" stroke="var(--color-accent)" stroke-width="4" />
+      </svg>
+      <svg aria-hidden="true" class="parallax-layer pointer-events-none absolute -bottom-48 -right-32 h-[40rem] w-[40rem] opacity-20" viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="95" stroke="#ffffff" stroke-width="4" />
+        <circle cx="100" cy="100" r="72" stroke="var(--color-accent)" stroke-width="4" />
+      </svg>
+
+      <div class="reveal relative mx-auto max-w-3xl px-6 text-center text-white sm:px-8">
+        <h2 class="text-3xl font-medium sm:text-4xl">Agenda tu cita y dale a tu sonrisa el cuidado que merece</h2>
+        <a href="tel:+523316484084" class="btn btn-accent mt-8 inline-flex">Escríbenos ahora</a>
+      </div>
+    </section>
+
+    <!-- ============ UBICACIÓN ============ -->
+    <section id="ubicacion" class="mx-auto max-w-7xl px-6 py-24 sm:px-8 sm:py-28 lg:px-10">
+      <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="reveal">
+          <p class="kicker">Visítanos</p>
+          <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Te esperamos en Providencia</h2>
+
+          <address class="mt-6 not-italic leading-relaxed text-ink">
+            <div class="flex gap-3">
+              <svg class="mt-1 shrink-0 text-brand" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span>Edificio Centro Médico, Av. Terranova 676 Int. 104, Col. Providencia, C.P. 44630, Guadalajara, Jalisco</span>
+            </div>
+          </address>
+
+          <div class="mt-5 flex gap-3">
+            <svg class="mt-1 shrink-0 text-brand" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            <p class="text-ink">Lunes a Viernes: 10:00 a 19:00 h · Sábados: 10:00 a 14:00 h</p>
+          </div>
+
+          <div class="mt-5 flex gap-3">
+            <svg class="mt-1 shrink-0 text-brand" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5c0 8.8 6.2 15 15 15l2-4-5-2-2 2c-2.4-1-4-2.6-5-5l2-2-2-5-4 1Z"/></svg>
+            <a href="tel:+523316484084" class="font-medium text-ink-strong underline decoration-brand/40 underline-offset-4 hover:text-brand">33 1648 4084</a>
+          </div>
+
+          <a href="tel:+523316484084" class="btn btn-primary mt-8">Llamar al consultorio</a>
+        </div>
+
+        <div class="reveal overflow-hidden rounded-[1.75rem] shadow-card">
+          <iframe
+            title="Ubicación de Pro Smile Dental Center en Google Maps"
+            src="https://www.google.com/maps?q=Edificio+Centro+M%C3%A9dico+Av+Terranova+676+Providencia+Guadalajara+Jalisco&output=embed"
+            class="h-[420px] w-full border-0 lg:h-full lg:min-h-[520px]"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SÍGUENOS ============ -->
+    <section class="bg-surface-soft px-6 py-20 text-center sm:px-8 lg:px-10">
+      <p class="kicker">Síguenos</p>
+      <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Conoce más de nosotros en redes sociales</h2>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="https://www.instagram.com/prosmiledentalcenter/" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Síguenos en Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a href="https://www.facebook.com/people/Prosmile-Dental-Center/100095510323012/" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Síguenos en Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H8v3h3v6h3v-6h3l1-3h-4V9a1 1 0 0 1 1-1Z"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="px-6 py-24 text-center sm:px-8 sm:py-28 lg:px-10">
+      <div class="reveal mx-auto max-w-2xl">
+        <h2 class="text-3xl font-medium sm:text-4xl">Tu mejor sonrisa empieza hoy</h2>
+        <a href="tel:+523316484084" class="btn btn-primary mt-8 inline-flex">Agenda tu cita ahora</a>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    &copy; 2026 Pro Smile Dental Center &middot; Monterrey, México
+  <!-- ============ FOOTER ============ -->
+  <footer id="contacto" class="bg-ink-strong px-6 py-16 text-white/80 sm:px-8 lg:px-10">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <div class="flex items-center gap-3">
+          <img
+            src="/images/logo-96.webp"
+            width="64" height="64"
+            alt="Logotipo de Pro Smile Dental Center"
+            class="h-12 w-12 rounded-full object-cover"
+            loading="lazy"
+          />
+          <span class="font-display text-lg font-medium text-white">Pro Smile Dental Center</span>
+        </div>
+        <p class="mt-4 max-w-xs text-sm leading-relaxed">
+          Consultorio dental especializado en endodoncia, periodoncia, ortodoncia, implantología y rehabilitación en Guadalajara.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-display text-base font-medium text-white">Contacto</h3>
+        <address class="mt-4 flex flex-col gap-3 text-sm not-italic leading-relaxed">
+          <span>Edificio Centro Médico, Av. Terranova 676 Int. 104, Col. Providencia, C.P. 44630, Guadalajara, Jalisco</span>
+          <a href="tel:+523316484084" class="w-fit hover:text-white">33 1648 4084</a>
+          <span>Lunes a Viernes: 10:00 a 19:00 h · Sábados: 10:00 a 14:00 h</span>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="font-display text-base font-medium text-white">Enlaces</h3>
+        <ul class="mt-4 flex flex-col gap-3 text-sm">
+          <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
+          <li><a href="#nosotros" class="hover:text-white">Nosotros</a></li>
+          <li><a href="#tratamientos" class="hover:text-white">Tratamientos</a></li>
+          <li><a href="#proceso" class="hover:text-white">Proceso</a></li>
+          <li><a href="#ubicacion" class="hover:text-white">Ubicación</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display text-base font-medium text-white">Síguenos</h3>
+        <div class="mt-4 flex gap-3">
+          <a href="https://www.instagram.com/prosmiledentalcenter/" target="_blank" rel="noopener noreferrer" class="icon-btn !border-white/30 !text-white hover:!bg-brand-dark hover:!border-brand-dark" aria-label="Síguenos en Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.facebook.com/people/Prosmile-Dental-Center/100095510323012/" target="_blank" rel="noopener noreferrer" class="icon-btn !border-white/30 !text-white hover:!bg-brand-dark hover:!border-brand-dark" aria-label="Síguenos en Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H8v3h3v6h3v-6h3l1-3h-4V9a1 1 0 0 1 1-1Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-8 text-center text-xs text-white/50">
+      © 2026 Pro Smile Dental Center. Todos los derechos reservados.
+    </div>
   </footer>
 </body>
 </html>
