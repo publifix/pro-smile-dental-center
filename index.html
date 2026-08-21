@@ -165,7 +165,7 @@
       <button
         id="menu-toggle"
         type="button"
-        class="icon-btn border-none bg-white/70 backdrop-blur lg:hidden"
+        class="icon-btn lg:hidden"
         aria-expanded="false"
         aria-controls="mobile-menu"
         aria-label="Abrir menú de navegación"
@@ -191,41 +191,49 @@
 
   <main id="contenido">
     <!-- ============ HERO ============ -->
-    <section id="inicio" class="relative flex min-h-[100svh] items-center overflow-hidden">
-      <div class="absolute inset-0">
-        <img
-          class="parallax-layer h-full w-full scale-[1.15] object-cover"
-          src="/images/hero-consultorio-pro-smile-1600.jpg"
-          srcset="
-            /images/hero-consultorio-pro-smile-640.avif 640w,
-            /images/hero-consultorio-pro-smile-1024.avif 1024w,
-            /images/hero-consultorio-pro-smile-1600.avif 1600w,
-            /images/hero-consultorio-pro-smile-2400.avif 2400w"
-          sizes="100vw"
-          width="2400" height="1800"
-          alt="Consultorio dental Pro Smile Dental Center en Providencia, Guadalajara"
-          fetchpriority="high"
-        />
-        <div class="absolute inset-0 bg-gradient-to-t from-ink-strong/80 via-ink-strong/35 to-ink-strong/20"></div>
-      </div>
+    <section id="inicio" class="relative overflow-hidden bg-surface-soft px-6 pb-16 pt-32 sm:px-8 sm:pb-20 sm:pt-36 lg:px-10 lg:pb-28 lg:pt-44">
+      <svg aria-hidden="true" class="pointer-events-none absolute -left-32 -top-32 h-[30rem] w-[30rem] opacity-[0.05] sm:h-[38rem] sm:w-[38rem]" viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="95" stroke="var(--color-neutral)" stroke-width="5" />
+        <circle cx="100" cy="100" r="72" stroke="var(--color-brand)" stroke-width="5" />
+      </svg>
 
-      <div class="relative mx-auto max-w-4xl px-6 py-32 text-center text-white sm:px-8">
-        <p class="kicker !text-white/90 reveal">Odontología integral en Guadalajara</p>
-        <h1 class="reveal mt-5 font-display text-[2.1rem] leading-[1.1] font-medium sm:text-5xl md:text-6xl">
-          Cuida tu sonrisa con el equipo de Pro Smile Dental Center
-        </h1>
-        <p class="reveal mx-auto mt-6 max-w-2xl text-base text-white/90 sm:text-lg">
-          Tratamientos dentales completos, un trato cercano y la tecnología que tu sonrisa merece, en el corazón de Providencia.
-        </p>
-        <div class="reveal mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a href="tel:+523316484084" class="btn btn-accent w-full sm:w-auto">Agenda tu cita</a>
-          <a href="#tratamientos" class="btn btn-ghost w-full !border-white/70 !text-white hover:!border-white sm:w-auto">Conoce nuestros tratamientos</a>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
+        <div>
+          <p class="kicker reveal">Odontología integral en Guadalajara</p>
+          <h1 class="reveal mt-5 text-4xl font-semibold leading-[1.08] tracking-tight text-ink-strong sm:text-5xl lg:text-[3.35rem]">
+            Cuida tu sonrisa con el equipo de Pro Smile Dental Center
+          </h1>
+          <p class="reveal mt-6 max-w-lg text-base leading-relaxed text-ink sm:text-lg">
+            Tratamientos dentales completos, un trato cercano y la tecnología que tu sonrisa merece, en el corazón de Providencia.
+          </p>
+          <div class="reveal mt-9 flex flex-col gap-4 sm:flex-row">
+            <a href="tel:+523316484084" class="btn btn-primary">Agenda tu cita</a>
+            <a href="#tratamientos" class="btn btn-ghost">Conoce nuestros tratamientos</a>
+          </div>
+        </div>
+
+        <div class="reveal relative">
+          <svg aria-hidden="true" class="pointer-events-none absolute -right-10 -top-10 h-40 w-40 opacity-25 sm:h-52 sm:w-52" viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="95" stroke="var(--color-brand)" stroke-width="5" />
+            <circle cx="100" cy="100" r="72" stroke="var(--color-accent)" stroke-width="5" />
+          </svg>
+          <div class="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <img
+              class="parallax-layer h-full w-full scale-110 object-cover"
+              src="/images/hero-consultorio-pro-smile-1600.jpg"
+              srcset="
+                /images/hero-consultorio-pro-smile-640.avif 640w,
+                /images/hero-consultorio-pro-smile-1024.avif 1024w,
+                /images/hero-consultorio-pro-smile-1600.avif 1600w,
+                /images/hero-consultorio-pro-smile-2400.avif 2400w"
+              sizes="(min-width: 1024px) 45vw, 90vw"
+              width="2400" height="1800"
+              alt="Consultorio dental Pro Smile Dental Center en Providencia, Guadalajara"
+              fetchpriority="high"
+            />
+          </div>
         </div>
       </div>
-
-      <a href="#nosotros" aria-label="Desplázate a la siguiente sección" class="absolute bottom-8 left-1/2 hidden -translate-x-1/2 animate-bounce text-white/80 sm:block motion-reduce:animate-none">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M6 9l6 6 6-6"/></svg>
-      </a>
     </section>
 
     <!-- ============ SOBRE NOSOTROS ============ -->
@@ -233,12 +241,12 @@
       <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <div class="reveal order-2 lg:order-1">
           <p class="kicker">Sobre nosotros</p>
-          <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Un consultorio pensado para que sonreír sea fácil</h2>
+          <h2 class="mt-4 text-3xl font-semibold sm:text-4xl">Un consultorio pensado para que sonreír sea fácil</h2>
           <p class="mt-6 text-base leading-relaxed text-ink sm:text-lg">
             En Pro Smile Dental Center creemos que cuidar tu boca no debería ser complicado ni intimidante. Por eso combinamos experiencia clínica en todas las áreas de la odontología con un trato cálido y cercano, para acompañarte en cada etapa del cuidado de tu sonrisa, desde la prevención hasta los tratamientos más especializados.
           </p>
         </div>
-        <div class="reveal order-1 aspect-[4/5] overflow-hidden rounded-[1.75rem] lg:order-2">
+        <div class="reveal order-1 aspect-[4/5] overflow-hidden rounded-2xl lg:order-2">
           <img
             class="h-full w-full object-cover"
             src="/images/atencion-dental-pro-smile-1080.jpg"
@@ -261,47 +269,37 @@
       <div class="mx-auto max-w-7xl">
         <div class="reveal mx-auto max-w-2xl text-center">
           <p class="kicker">Tratamientos</p>
-          <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Todo lo que tu sonrisa necesita, en un solo lugar</h2>
+          <h2 class="mt-4 text-3xl font-semibold sm:text-4xl">Todo lo que tu sonrisa necesita, en un solo lugar</h2>
         </div>
 
         <div id="treatments-grid" class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
-            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2.4 0-3.6 1.4-5 1.4S4 3.6 3 4.6c-1.3 1.3-1 4 .2 7 .9 2.3 1.6 5.4 2.8 7.4.7 1.1 1.4 1.6 2 1.6.9 0 1.1-1.6 1.4-3.2.3-1.4.6-2.6 1.6-2.6s1.3 1.2 1.6 2.6c.3 1.6.5 3.2 1.4 3.2.6 0 1.3-.5 2-1.6 1.2-2 1.9-5.1 2.8-7.4 1.2-3 1.5-5.7.2-7-1-1-2.6.2-4 .2S14.4 3 12 3Z"/></svg>
-            </span>
-            <h3 class="mt-6 font-display text-xl font-medium">Endodoncia</h3>
+          <article class="treatment-card rounded-xl border border-neutral/20 bg-white p-8">
+            <p class="font-display text-sm font-semibold tracking-wide text-brand-dark">01</p>
+            <h3 class="mt-4 text-xl font-semibold">Endodoncia</h3>
             <p class="mt-3 leading-relaxed text-ink">Tratamos la raíz de tu diente para eliminar el dolor y salvar tu pieza dental sin complicaciones.</p>
           </article>
 
-          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
-            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13c0-4 3-8 8-8s8 4 8 8-3 6-8 6-8-2-8-6Z"/><path d="M8 13c0 2 2 3 4 3s4-1 4-3"/></svg>
-            </span>
-            <h3 class="mt-6 font-display text-xl font-medium">Periodoncia</h3>
+          <article class="treatment-card rounded-xl border border-neutral/20 bg-white p-8">
+            <p class="font-display text-sm font-semibold tracking-wide text-brand-dark">02</p>
+            <h3 class="mt-4 text-xl font-semibold">Periodoncia</h3>
             <p class="mt-3 leading-relaxed text-ink">Cuidamos la salud de tus encías para proteger la base de tu sonrisa a largo plazo.</p>
           </article>
 
-          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
-            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="9" width="16" height="7" rx="3"/><path d="M8 9V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-            </span>
-            <h3 class="mt-6 font-display text-xl font-medium">Ortodoncia</h3>
+          <article class="treatment-card rounded-xl border border-neutral/20 bg-white p-8">
+            <p class="font-display text-sm font-semibold tracking-wide text-brand-dark">03</p>
+            <h3 class="mt-4 text-xl font-semibold">Ortodoncia</h3>
             <p class="mt-3 leading-relaxed text-ink">Alineamos tus dientes con el tratamiento adecuado para ti, a tu ritmo y con resultados duraderos.</p>
           </article>
 
-          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
-            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v9"/><path d="M8 8l4-5 4 5"/><path d="M7 21l1.5-9h7L17 21"/></svg>
-            </span>
-            <h3 class="mt-6 font-display text-xl font-medium">Implantología</h3>
+          <article class="treatment-card rounded-xl border border-neutral/20 bg-white p-8">
+            <p class="font-display text-sm font-semibold tracking-wide text-brand-dark">04</p>
+            <h3 class="mt-4 text-xl font-semibold">Implantología</h3>
             <p class="mt-3 leading-relaxed text-ink">Reemplazamos piezas dentales perdidas con implantes seguros y de aspecto natural.</p>
           </article>
 
-          <article class="treatment-card card-treatment rounded-2xl bg-white p-8">
-            <span class="icon-tooth flex h-12 w-12 items-center justify-center rounded-full bg-brand/10 text-brand">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 1 3 6.2"/><path d="M4 18v-4h4"/></svg>
-            </span>
-            <h3 class="mt-6 font-display text-xl font-medium">Rehabilitación</h3>
+          <article class="treatment-card rounded-xl border border-neutral/20 bg-white p-8">
+            <p class="font-display text-sm font-semibold tracking-wide text-brand-dark">05</p>
+            <h3 class="mt-4 text-xl font-semibold">Rehabilitación</h3>
             <p class="mt-3 leading-relaxed text-ink">Recuperamos la función y la estética de tu boca con soluciones integrales a la medida.</p>
           </article>
         </div>
@@ -317,7 +315,7 @@
 
       <div class="reveal relative mx-auto max-w-2xl text-center">
         <p class="kicker">Cómo trabajamos</p>
-        <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Así cuidamos tu sonrisa, paso a paso</h2>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-4xl">Así cuidamos tu sonrisa, paso a paso</h2>
       </div>
 
       <div id="process-pin-wrapper" class="relative mx-auto mt-16 max-w-6xl">
@@ -332,46 +330,46 @@
 
             <div class="grid grid-cols-1 gap-6 lg:hidden">
               <article class="process-step reveal rounded-2xl bg-surface-soft p-8">
-                <p class="font-display text-4xl font-medium text-brand/40">01</p>
-                <h3 class="mt-3 font-display text-xl font-medium">Agenda tu cita</h3>
+                <p class="font-display text-4xl font-light text-brand/50">01</p>
+                <h3 class="mt-3 font-display text-xl font-semibold">Agenda tu cita</h3>
                 <p class="mt-3 leading-relaxed text-ink">Contáctanos por teléfono o mensaje y elegimos el horario que mejor te acomode.</p>
               </article>
               <article class="process-step reveal rounded-2xl bg-surface-soft p-8">
-                <p class="font-display text-4xl font-medium text-brand/40">02</p>
-                <h3 class="mt-3 font-display text-xl font-medium">Diagnóstico personalizado</h3>
+                <p class="font-display text-4xl font-light text-brand/50">02</p>
+                <h3 class="mt-3 font-display text-xl font-semibold">Diagnóstico personalizado</h3>
                 <p class="mt-3 leading-relaxed text-ink">Evaluamos tu caso y diseñamos un plan de tratamiento a tu medida.</p>
               </article>
               <article class="process-step reveal rounded-2xl bg-surface-soft p-8">
-                <p class="font-display text-4xl font-medium text-brand/40">03</p>
-                <h3 class="mt-3 font-display text-xl font-medium">Tratamiento con seguimiento cercano</h3>
+                <p class="font-display text-4xl font-light text-brand/50">03</p>
+                <h3 class="mt-3 font-display text-xl font-semibold">Tratamiento con seguimiento cercano</h3>
                 <p class="mt-3 leading-relaxed text-ink">Te acompañamos en cada sesión, explicándote cada paso.</p>
               </article>
               <article class="process-step reveal rounded-2xl bg-surface-soft p-8">
-                <p class="font-display text-4xl font-medium text-brand/40">04</p>
-                <h3 class="mt-3 font-display text-xl font-medium">Sonrisa cuidada a largo plazo</h3>
+                <p class="font-display text-4xl font-light text-brand/50">04</p>
+                <h3 class="mt-3 font-display text-xl font-semibold">Sonrisa cuidada a largo plazo</h3>
                 <p class="mt-3 leading-relaxed text-ink">Te damos las recomendaciones para mantener tu sonrisa sana entre visitas.</p>
               </article>
             </div>
 
             <div id="process-panels" class="relative hidden lg:block lg:h-80">
               <article data-step-panel="0" class="process-panel absolute inset-0">
-                <p class="font-display text-6xl font-medium text-brand/30">01</p>
-                <h3 class="mt-4 font-display text-3xl font-medium">Agenda tu cita</h3>
+                <p class="font-display text-6xl font-light text-brand/50">01</p>
+                <h3 class="mt-4 font-display text-3xl font-semibold">Agenda tu cita</h3>
                 <p class="mt-4 max-w-xl text-lg leading-relaxed text-ink">Contáctanos por teléfono o mensaje y elegimos el horario que mejor te acomode.</p>
               </article>
               <article data-step-panel="1" class="process-panel absolute inset-0">
-                <p class="font-display text-6xl font-medium text-brand/30">02</p>
-                <h3 class="mt-4 font-display text-3xl font-medium">Diagnóstico personalizado</h3>
+                <p class="font-display text-6xl font-light text-brand/50">02</p>
+                <h3 class="mt-4 font-display text-3xl font-semibold">Diagnóstico personalizado</h3>
                 <p class="mt-4 max-w-xl text-lg leading-relaxed text-ink">Evaluamos tu caso y diseñamos un plan de tratamiento a tu medida.</p>
               </article>
               <article data-step-panel="2" class="process-panel absolute inset-0">
-                <p class="font-display text-6xl font-medium text-brand/30">03</p>
-                <h3 class="mt-4 font-display text-3xl font-medium">Tratamiento con seguimiento cercano</h3>
+                <p class="font-display text-6xl font-light text-brand/50">03</p>
+                <h3 class="mt-4 font-display text-3xl font-semibold">Tratamiento con seguimiento cercano</h3>
                 <p class="mt-4 max-w-xl text-lg leading-relaxed text-ink">Te acompañamos en cada sesión, explicándote cada paso.</p>
               </article>
               <article data-step-panel="3" class="process-panel absolute inset-0">
-                <p class="font-display text-6xl font-medium text-brand/30">04</p>
-                <h3 class="mt-4 font-display text-3xl font-medium">Sonrisa cuidada a largo plazo</h3>
+                <p class="font-display text-6xl font-light text-brand/50">04</p>
+                <h3 class="mt-4 font-display text-3xl font-semibold">Sonrisa cuidada a largo plazo</h3>
                 <p class="mt-4 max-w-xl text-lg leading-relaxed text-ink">Te damos las recomendaciones para mantener tu sonrisa sana entre visitas.</p>
               </article>
             </div>
@@ -390,7 +388,7 @@
 
         <!-- Nota para el equipo: testimonios de ejemplo (mock), sustituir por reseñas reales de pacientes -->
         <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <figure class="testimonial-card reveal rounded-2xl bg-white p-8">
+          <figure class="testimonial-card reveal rounded-xl border border-neutral/20 bg-white p-8">
             <div class="flex gap-1 text-accent" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
               <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
@@ -404,7 +402,7 @@
             <figcaption class="mt-4 font-display text-lg font-medium text-ink-strong">— Ana M.</figcaption>
           </figure>
 
-          <figure class="testimonial-card reveal rounded-2xl bg-white p-8">
+          <figure class="testimonial-card reveal rounded-xl border border-neutral/20 bg-white p-8">
             <div class="flex gap-1 text-accent" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
               <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
@@ -418,7 +416,7 @@
             <figcaption class="mt-4 font-display text-lg font-medium text-ink-strong">— Carlos R.</figcaption>
           </figure>
 
-          <figure class="testimonial-card reveal rounded-2xl bg-white p-8">
+          <figure class="testimonial-card reveal rounded-xl border border-neutral/20 bg-white p-8">
             <div class="flex gap-1 text-accent" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
               <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6-4.6-4.1 6.1-.6z"/></svg>
@@ -437,21 +435,21 @@
         <dl class="mt-16 grid grid-cols-1 gap-10 border-t border-neutral/20 pt-12 text-center sm:grid-cols-3">
           <div class="reveal">
             <dt class="sr-only">Pacientes atendidos</dt>
-            <dd class="font-display text-4xl font-medium text-brand sm:text-5xl">
+            <dd class="font-display text-4xl font-bold text-brand-dark sm:text-5xl">
               <span data-counter data-target="1200" data-suffix="+">0</span>
             </dd>
             <p class="mt-2 text-sm text-neutral">pacientes atendidos</p>
           </div>
           <div class="reveal">
             <dt class="sr-only">Años cuidando sonrisas</dt>
-            <dd class="font-display text-4xl font-medium text-brand sm:text-5xl">
+            <dd class="font-display text-4xl font-bold text-brand-dark sm:text-5xl">
               <span data-counter data-target="8" data-prefix="+">0</span>
             </dd>
             <p class="mt-2 text-sm text-neutral">años cuidando sonrisas</p>
           </div>
           <div class="reveal">
             <dt class="sr-only">Satisfacción</dt>
-            <dd class="font-display text-4xl font-medium text-brand sm:text-5xl">
+            <dd class="font-display text-4xl font-bold text-brand-dark sm:text-5xl">
               <span data-counter data-target="98" data-suffix="%">0</span>
             </dd>
             <p class="mt-2 text-sm text-neutral">de satisfacción</p>
@@ -472,7 +470,7 @@
       </svg>
 
       <div class="reveal relative mx-auto max-w-3xl px-6 text-center text-white sm:px-8">
-        <h2 class="text-3xl font-medium sm:text-4xl">Agenda tu cita y dale a tu sonrisa el cuidado que merece</h2>
+        <h2 class="text-3xl font-semibold text-white sm:text-4xl">Agenda tu cita y dale a tu sonrisa el cuidado que merece</h2>
         <a href="tel:+523316484084" class="btn btn-accent mt-8 inline-flex">Escríbenos ahora</a>
       </div>
     </section>
@@ -482,7 +480,7 @@
       <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div class="reveal">
           <p class="kicker">Visítanos</p>
-          <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Te esperamos en Providencia</h2>
+          <h2 class="mt-4 text-3xl font-semibold sm:text-4xl">Te esperamos en Providencia</h2>
 
           <address class="mt-6 not-italic leading-relaxed text-ink">
             <div class="flex gap-3">
@@ -504,7 +502,7 @@
           <a href="tel:+523316484084" class="btn btn-primary mt-8">Llamar al consultorio</a>
         </div>
 
-        <div class="reveal overflow-hidden rounded-[1.75rem] shadow-card">
+        <div class="reveal overflow-hidden rounded-2xl border border-neutral/20">
           <iframe
             title="Ubicación de Pro Smile Dental Center en Google Maps"
             src="https://www.google.com/maps?q=Edificio+Centro+M%C3%A9dico+Av+Terranova+676+Providencia+Guadalajara+Jalisco&output=embed"
@@ -519,7 +517,7 @@
     <!-- ============ SÍGUENOS ============ -->
     <section class="bg-surface-soft px-6 py-20 text-center sm:px-8 lg:px-10">
       <p class="kicker">Síguenos</p>
-      <h2 class="mt-4 text-3xl font-medium sm:text-4xl">Conoce más de nosotros en redes sociales</h2>
+      <h2 class="mt-4 text-3xl font-semibold sm:text-4xl">Conoce más de nosotros en redes sociales</h2>
       <div class="mt-8 flex justify-center gap-4">
         <a href="https://www.instagram.com/prosmiledentalcenter/" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Síguenos en Instagram">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
@@ -533,7 +531,7 @@
     <!-- ============ CTA FINAL ============ -->
     <section class="px-6 py-24 text-center sm:px-8 sm:py-28 lg:px-10">
       <div class="reveal mx-auto max-w-2xl">
-        <h2 class="text-3xl font-medium sm:text-4xl">Tu mejor sonrisa empieza hoy</h2>
+        <h2 class="text-3xl font-semibold sm:text-4xl">Tu mejor sonrisa empieza hoy</h2>
         <a href="tel:+523316484084" class="btn btn-primary mt-8 inline-flex">Agenda tu cita ahora</a>
       </div>
     </section>
@@ -559,7 +557,7 @@
       </div>
 
       <div>
-        <h3 class="font-display text-base font-medium text-white">Contacto</h3>
+        <h3 class="font-display text-base font-semibold text-white">Contacto</h3>
         <address class="mt-4 flex flex-col gap-3 text-sm not-italic leading-relaxed">
           <span>Edificio Centro Médico, Av. Terranova 676 Int. 104, Col. Providencia, C.P. 44630, Guadalajara, Jalisco</span>
           <a href="tel:+523316484084" class="w-fit hover:text-white">33 1648 4084</a>
@@ -568,7 +566,7 @@
       </div>
 
       <div>
-        <h3 class="font-display text-base font-medium text-white">Enlaces</h3>
+        <h3 class="font-display text-base font-semibold text-white">Enlaces</h3>
         <ul class="mt-4 flex flex-col gap-3 text-sm">
           <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
           <li><a href="#nosotros" class="hover:text-white">Nosotros</a></li>
@@ -579,7 +577,7 @@
       </div>
 
       <div>
-        <h3 class="font-display text-base font-medium text-white">Síguenos</h3>
+        <h3 class="font-display text-base font-semibold text-white">Síguenos</h3>
         <div class="mt-4 flex gap-3">
           <a href="https://www.instagram.com/prosmiledentalcenter/" target="_blank" rel="noopener noreferrer" class="icon-btn !border-white/30 !text-white hover:!bg-brand-dark hover:!border-brand-dark" aria-label="Síguenos en Instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>

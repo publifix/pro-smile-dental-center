@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -12,11 +12,10 @@
   --color-surface: #ffffff;
   --color-surface-soft: #f7fafa;
 
-  --font-display: "Libre Bodoni", "Iowan Old Style", "Georgia", serif;
-  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  --shadow-card: 0 1px 2px rgba(44, 44, 44, 0.04), 0 12px 32px -16px rgba(44, 44, 44, 0.18);
-  --shadow-card-hover: 0 4px 10px rgba(44, 44, 44, 0.06), 0 24px 48px -20px rgba(79, 166, 156, 0.35);
+  --shadow-card-hover: 0 16px 32px -20px rgba(44, 44, 44, 0.22);
 }
 
 @layer base {
@@ -34,7 +33,9 @@
   h3 {
     font-family: var(--font-display);
     color: var(--color-ink-strong);
+    font-weight: 600;
     line-height: 1.15;
+    letter-spacing: -0.02em;
   }
 
   a,
@@ -72,21 +73,22 @@
     min-height: 44px;
     padding-inline: 1.75rem;
     padding-block: 0.85rem;
-    border-radius: 999px;
+    border-radius: 0.625rem;
     font-family: var(--font-body);
     font-weight: 600;
     font-size: 0.95rem;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.01em;
     transition:
-      transform 260ms cubic-bezier(0.16, 1, 0.3, 1),
-      background-color 260ms ease,
-      color 260ms ease,
-      box-shadow 260ms ease;
+      transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
+      background-color 220ms ease,
+      border-color 220ms ease,
+      color 220ms ease,
+      box-shadow 220ms ease;
     cursor: pointer;
   }
 
   .btn:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
   }
 
   .btn:active {
@@ -103,21 +105,21 @@
   .btn-primary {
     background-color: var(--color-brand-dark);
     color: #ffffff;
-    box-shadow: 0 10px 24px -10px rgba(53, 110, 103, 0.6);
   }
 
   .btn-primary:hover {
     background-color: var(--color-brand-darker);
+    box-shadow: 0 12px 24px -12px rgba(42, 87, 81, 0.5);
   }
 
   .btn-accent {
     background-color: var(--color-accent);
     color: var(--color-ink-strong);
-    box-shadow: 0 10px 24px -10px rgba(126, 217, 204, 0.55);
   }
 
   .btn-accent:hover {
     background-color: #6bcabd;
+    box-shadow: 0 12px 24px -12px rgba(107, 202, 189, 0.5);
   }
 
   .btn-ghost {
@@ -127,14 +129,14 @@
   }
 
   .btn-ghost:hover {
-    border-color: var(--color-brand);
+    border-color: var(--color-brand-dark);
     color: var(--color-brand-dark);
   }
 
   .nav-link {
     position: relative;
     font-weight: 500;
-    color: #ffffff;
+    color: var(--color-ink-strong);
     padding-block: 0.35rem;
     transition: color 300ms ease;
   }
@@ -161,8 +163,7 @@
   }
 
   #site-header .brand-name {
-    color: #ffffff;
-    transition: color 300ms ease;
+    color: var(--color-ink-strong);
   }
 
   #site-header.is-scrolled {
@@ -171,34 +172,28 @@
     box-shadow: 0 1px 2px rgba(44, 44, 44, 0.06);
   }
 
-  #site-header.is-scrolled .nav-link {
-    color: var(--color-ink-strong);
-  }
-
-  #site-header.is-scrolled .brand-name {
-    color: var(--color-ink-strong);
-  }
-
   #site-header.is-hidden {
     transform: translateY(-100%);
   }
 
-  .card-treatment {
+  .treatment-card {
+    position: relative;
     transition:
-      transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
-      box-shadow 320ms cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: var(--shadow-card);
+      transform 280ms cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 280ms ease,
+      box-shadow 280ms ease;
   }
 
   @media (hover: hover) {
-    .card-treatment:hover {
-      transform: translateY(-6px);
+    .treatment-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(53, 110, 103, 0.35);
       box-shadow: var(--shadow-card-hover);
     }
   }
 
-  .card-treatment:active {
-    transform: scale(0.98);
+  .treatment-card:active {
+    background-color: var(--color-surface-soft);
   }
 
   .icon-btn {
